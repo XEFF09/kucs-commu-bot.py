@@ -1,0 +1,8 @@
+services:
+    bot:
+        restart: on-failure
+        build:
+            context: .
+            dockerfile: Dockerfile
+        environment:
+            - DISCORD_TOKEN
